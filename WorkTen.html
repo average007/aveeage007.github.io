@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body background="sy2.jpg">
+    <div align="center">
+    <h1>管理员登录</h1> 
+    <label>用户：</label>
+    <input id = "username" type="username"><br>
+    <label>密码：</label>
+    <input id = "password" type="password"><br>
+    <button onclick="myFunction()">Login in</button>
+    </div>
+    <script>
+        function myFunction(){
+            var a,b;
+            var i,j;
+            a = "123456";
+            b = document.getElementById("password").value;
+            i = "admin";
+            j = document.getElementById("username").value;
+            if((a = b)&&(i = j)){
+                location.href = "WorkTen02.html";
+            }
+            else{
+                alert("密码错误，请重新输入");
+            }
+        }
+    </script>
+</body>
+<ml>
